@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -74,6 +75,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# temporarily disable pushing the docs folder to git
+docs/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -110,6 +114,16 @@ ENV/
 env.bak/
 venv.bak/
 
+# Database
+*.db
+*.rdb
+
+# Pycharm
+.idea
+
+# VS Code
+.vscode/
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -127,3 +141,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# exclude data from source control by default
+/data/
+
+# Mac OS-specific storage files
+.DS_Store
+
+# vim
+*.swp
+*.swo
